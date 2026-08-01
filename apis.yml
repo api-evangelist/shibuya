@@ -1,7 +1,26 @@
 aid: shibuya
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shibuya.png
 name: Shibuya
-description: Shibuya is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Shibuya is a platform for curated short films and the independent creators
+  behind them, describing itself as a home where fans help greenlight the future of
+  film and audiences discover original storytelling. Operated by NotShibuya, Inc.
+  and backed by a16z, Shibuya began as a web3 storytelling experiment and has grown
+  into a community-driven curation platform for short-form film, winning a 2025 Primetime
+  Emmy for Outstanding Innovation in Emerging Media Programming. It was surfaced as
+  a portfolio company of a16z and added to the API Evangelist network. As of this
+  enrichment pass Shibuya publishes no public developer program, API, SDK, or documentation
+  surface; this profile captures its real public web properties.
 url: https://raw.githubusercontent.com/api-evangelist/shibuya/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Film
+- Short Films
+- Media
+- Entertainment
+- Streaming
+- Creators
+- Web3
 apis: []
+common:
+- type: DomainSecurity
+  url: security/shibuya-domain-security.yml
+- type: Website
+  url: https://www.shibuya.film/
+- type: Blog
+  url: https://shibuyaxyz.substack.com
+- type: TermsOfService
+  url: https://www.shibuya.film/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.shibuya.film/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
